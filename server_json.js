@@ -45,7 +45,7 @@ function procesareRaspuns(){
         content.push("<table id=\"after_json\" style='border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;'>");
         content.push("<tr style='background-color: turquoise; color: black;'><th style='padding: 8px; border: 2px solid black;'>Name</th><th style='padding: 8px; border: 2px solid black;'>Year</th></tr>");
         $.each(data, function (index, election) {
-            content.push("<tr style='border: 2px solid black;'><td style='padding: 8px;'>" + election.name + "</td><td style='padding: 8px;'>" + election.year + "</td></tr>");
+            content.push("<tr style='border: 5px solid black;'><td style='padding: 8px;'>" + election.name + "</td><td style='padding: 8px;'>" + election.year + "</td></tr>");
         });
         content.push("</table>");
 
