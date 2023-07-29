@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proiect Web Semantic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="server_json.js"></script>
+    <script src="scrapping.js"></script>
+    <script src="server_grafuri.js"></script>
+    <script src="stergere_json.js"></script>
+</head>
+<body>
+<button id="get-data-btn" style="background-color:#40E0D0;">Preluare date din Web Scrapping</button>
+<br><br><br>
+<div id="data-container"></div>
+<br><br>
+<form id="form">
+    Vicepresedinte: <input id="vicepresident" type="text" name="vice"><br><br>
+    Anul alegerii: <input id="year" type="number" name="year">
+</form>
+<br>
+
+<button onclick="trimiteCerere()" style="background-color:#40E0D0;">Inserare in server JSON</button>
+<br><br>
+<div id="json" style="height: 100px; width: 200px;"></div>
+<br><br><br><br><br><br><br>
+
+<button onclick="inserareRDF()" style="background-color:#40E0D0;">Inserare in server RDF</button>
+<br><br>
+<div id="rdf" style="height: 100px; width: 200px;"></div><br><br>
+<br><br><br><br><br><br><br>
+<div id="rdf2" style="height: 100px; width: 200px;"></div><br><br>
+<br><br><br><br><br>
+<form id="secondForm">
+    <label for="">Introduceti campul pe care doriti sa-l stergeti:</label>
+    <input type="text" id="stergereCamp"><br><br>
+</form>
+<button onclick="stergereJSON()" style="background-color:#40E0D0;">Stergere camp</button>
+<br><br><br>
+<div id="stergere" style="height: 100px; width: 200px;"></div><br><br>
+</div>
+
+</body>
+</html>
